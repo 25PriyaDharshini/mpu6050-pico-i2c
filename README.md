@@ -1,7 +1,12 @@
-git init
-git add .
-git commit -m "Initial commit: MPU6050 I2C library and example for Raspberry Pi Pico"
-git branch -M main
-git remote add origin https://github.com/YourUsername/mpu6050-pico-i2c.git
-git push -u origin main
-# mpu6050-pico-i2c
+# MPU6050 I2C Library for Raspberry Pi Pico
+
+This repository contains a simple C++ library to interface MPU6050 sensor via I2C with Raspberry Pi Pico.
+
+## Usage
+- Connect MPU6050 SDA → GPIO8, SCL → GPIO9
+- Build and flash main.cpp using the Raspberry Pi Pico SDK
+- Serial output shows accelerometer X, Y, Z values
+
+## Files
+- MPU6050.h / MPU6050.cpp : Library code
+- main.cpp : Example usage
